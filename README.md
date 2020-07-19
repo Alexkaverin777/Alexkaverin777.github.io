@@ -8,4 +8,8 @@
 
 
 [Forma](https://alexkaverin777.github.io/forma/ "Forma") - Forma
+ 
+
+[Mini Slider](https://alexkaverin777.github.io/testing/ "Slider") - Мини слайдер по кнопкам 
+
 
