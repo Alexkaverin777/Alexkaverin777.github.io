@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST TASK</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="card">
+            <span class="card__new">new</span>
+            <button class="card__top-btn">
+                <img src="./img/vector.png" id="imgOk" alt="">
+            </button>
+            <div class="card__img">
+                <img src="./img/tovar1.png" alt="">
+            </div>
+            <h4 class="card__title">Шампунь</h4>
+            <p class="card__descriptions">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco.</p>
+            <div class="wrapper-selector">
+                <div class="wrapper-select">
+                    <div class="select-header" id="select-header" >
+                        <span class="select-header__out" id="select-header__out">Цвет</span>
+                        <span class="select-header__carrent"></span>
+                    </div>
+                    <ul class="select-body" id="select-body">
+                        <li class="select-body__item">Желтый</li>
+                        <li class="select-body__item">Зеленый</li>
+                        <li class="select-body__item">Голубой</li>
+                        <li class="select-body__item">Красный</li>
+                        <li class="select-body__item">Черный</li>
+                        <li class="select-body__item">Розовый</li>
+                    </ul>
+                </div>
+                <div class="cent">200 грн</div>
+            </div>
+            <div class="input-bloc">
+                <ul class="form-list">
+                    <li class="form-list__item">
+                        <input type="radio" id="oneHundred" checked name="ml" value="oneHundred"
+                               class="radio-input sr-only">
+                        <label for="oneHundred" class="radio__label">
+                            100 мл
+                        </label>
+                    </li>
+                    <li class="form-list__item">
+                        <input type="radio" id="twoHundred" name="ml" value="twoHundred" class="radio-input sr-only">
+                        <label for="twoHundred" class="radio__label">
+                            200 мл
+                        </label>
+                    </li>
+                    <li class="form-list__item">
+                        <input type="radio" id="threeHundred" name="ml" value="threeHundred"
+                               class="radio-input sr-only">
+                        <label for="threeHundred" class="radio__label">
+                            300 мл
+                        </label>
+                    </li>
+
+                </ul><!-- end- form-list-->
+            </div>
+            <div class="wrapper-btn">
+                <div class="quantity">
+                    <button class="quantity__smaller" id="quantitySmaller">-</button>
+                    <span class="quantity__out" id="quantityOut">1</span>
+                    <button class="quantity__more" id="quantityMore">+</button>
+                </div>
+                <div class="buy">
+                    <button class="buy__btn" id="buyBtn">КУПИТЬ</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</header>
+<script src="./js/main.js"></script>
+</body>
+</html>
