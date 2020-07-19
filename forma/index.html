@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href=".//css/modern-normolaz.css">
+    <link rel="stylesheet" href=".//css/main.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">        
+        <form action="#" method="get" class="form">            
+            <h3 class="form-title">
+                Персональные данные
+            </h3><!-- end-form-title -->
+            <fieldset class="form-fieldset">
+                <legend class="form-legend">
+                    Контактные данные
+                </legend><!-- end- form-legend-->
+                <div class="input-bloc">
+                    <Label  for="name" class="input-bloc__label " >
+                        Ваше имя
+                    </Label><!-- end- input-bloc__label-->
+                    <input type="text" name="name" id="name" placeholder="Ваше имя" class="input-bloc__input input-bloc__label_img-name" required>
+                </div><!-- end- input-bloc-->
+                <div class="input-bloc">
+                    <Label  for="mail" class="input-bloc__label" >
+                        Email
+                    </Label><!-- end-input-bloc__label -->
+                    <input type="text" name="mail" id="mail" placeholder="Email" class="input-bloc__input input-bloc__label_img-mail" required>
+                    </div><!-- end-input-bloc -->
+                <div class="input-bloc">
+                    <Label  for="tel" class="input-bloc__label" >
+                       Телефон
+                    </Label>
+                    <input type="text" name="tel" id="tel" placeholder="Телефон" class="input-bloc__input input-bloc__label_img-tel" required>              
+                </div>  <!-- end- input-bloc-->              
+            </fieldset><!-- end- form-fieldset-->
+            <fieldset class="form-fieldset">
+                <legend class="form-legend">
+                    Дополнительные данные
+                </legend><!-- end-form-legend -->
+                <div class="input-bloc">
+                    <h4 class="input-bloc__title">
+                        Хобби
+                    </h4><!-- end- input-bloc__title-->
+                    <div class="selector">
+                        <select name="hoby" id="hoby" class="input-selector">
+                        <option selected disabled>
+                            Укажите хобби
+                        </option>
+                        <option value="">
+                            Спорт
+                        </option>
+                        <option value="">
+                            Чтение
+                        </option>
+                        <option value="">
+                            Путешествия 
+                        </option>
+                        <option value="">
+                            Рисование 
+                        </option>
+                        <option value="">
+                            Другое
+                        </option>
+                        </select>
+                    </div><!-- end-selector -->
+                </div><!-- end-input-bloc -->
+                <div class="input-bloc">
+                    <h4 class="input-bloc__title">
+                        Ваш пол
+                    </h4><!-- end- input-bloc__title-->
+                    <ul class="form-list">
+                        <li class="form-list__item">
+                            <input type="radio" id="male" name="sex" value="Мужской" class="radio-input sr-only">
+                            <label for="male" class="radio__label">
+                                Мужской
+                            </label>                           
+                        </li>
+                        <li class="form-list__item">
+                            <input type="radio" id="female" name="sex" value="Женский" class="radio-input sr-only">
+                            <label for="female" class="radio__label">
+                                Женский
+                            </label>
+                        </li>
+                    </ul><!-- end- form-list-->
+                </div><!-- end- input-bloc-->
+                <div class="input-bloc">
+                    <h4 class="input-bloc__title">
+                        Вредные привычки
+                    </h4><!-- end-input-bloc__title -->
+                    <ul class="form-list">
+                        <li class="form-list__item">
+                            <input type="checkbox" name="smoke" id="smoke" value="Курение" class="radio-input sr-only">
+                            <label for="smoke" class="form-list__label">Курение</label>
+                        </li>
+                        <li class="form-list__item">
+                            <input type="checkbox" name="alcohol" id="alcohol" value="Алкоголь" class="radio-input sr-only">
+                            <label for="alcohol" class="form-list__label">Алкоголь</label>
+                        </li>
+                        <li class="form-list__item">
+                            <input type="checkbox" name="drugs" id="drugs" value="Наркотики" class="radio-input sr-only">
+                            <label for="drugs" class="form-list__label">
+                                Наркотики
+                            </label>
+                        </li>
+                    </ul><!-- end- form-list-->
+                </div><!-- end- input-bloc-->
+                <div class="form-bloc-text">
+                    <label for="comment" class="form-bloc-text__label sr-only">
+                        Дополнительная информация о себе
+                    </label>                     
+                    <textarea id="comment" cols="30" rows="3" class="form-bloc-text__textarea" placeholder="Дополнительная информация о себе"></textarea>
+                </div><!-- end- form-bloc-text-->
+                <div class="form-btn">
+                    <button class="form-btn__btn" type="submit">
+                        Сохранить
+                    </button>
+                </div><!-- end- form-btn-->
+            </fieldset> <!-- end-fieldset -->                      
+        </form>   <!-- end-form -->             
+   </div>  <!-- end-container -->
+</body>
+</html>
