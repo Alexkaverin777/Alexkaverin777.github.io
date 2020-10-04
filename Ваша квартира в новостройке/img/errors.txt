@@ -1,3 +1,0 @@
-[2018-05-02 09:39:45] layer "+7 (495) 544-23-12": Expected Either a default asset specification or a layer asset specification but "+" found.
-[2018-05-02 09:39:45] layer "E-mail: info@sitename.ru": Unsupported extension: ru
-[2018-05-02 09:39:45] layer "+7 (495) 544-23-12": Expected Either a default asset specification or a layer asset specification but "+" found.
