@@ -1,25 +1,36 @@
 const selectHeader = document.getElementById('select-header');
 const selectBodyItem = document.querySelectorAll('.select-body__item');
 const selectHeaderOut = document.getElementById('select-header__out');
-const btnMenuLeft = document.querySelector('.icon-menu-mobile-left');
-const btnMenuRight = document.querySelector('.icon-menu-mobile-right');
 const boxMenuLeft = document.querySelector('.menu__box_left');
+const menuTop = document.querySelector('.menu ');
 const boxMenuRight = document.querySelector('.menu__box_right');
 const closeMenuLeft = document.querySelector('.close-menu-left');
 const closeMenuRight = document.querySelector('.close-menu-right');
 
-btnMenuLeft.addEventListener('click', (e)=> {
-	boxMenuLeft.classList.add('menu-open')
+menuTop.addEventListener('click', (e) => {
+	const target = e.target;
+	console.log(target);
+
+	const iconMenuRight = target.closest('.fa-align-right');
+	const iconMenuLeft = target.closest('.fa-align-left');
+
+	if (iconMenuRight) {
+		boxMenuRight.classList.add('menu-open')
+	}else if (iconMenuLeft){
+		boxMenuLeft.classList.add('menu-open')
+	}else {
+		boxMenuRight.classList.remove('menu-open');
+		boxMenuLeft.classList.remove('menu-open');
+	}
+
 });
-closeMenuLeft.addEventListener('click', ()=>{
-	boxMenuLeft.classList.remove('menu-open')
-});
-btnMenuRight.addEventListener('click', ()=> {
-	boxMenuRight.classList.add('menu-open')
-});
-closeMenuRight.addEventListener('click', ()=>{
-	boxMenuRight.classList.remove('menu-open')
-});
+// else if(iconMenuLeft){
+// 	boxMenuLeft.classList.add('menu-open')
+// }
+
+
+
+
 
 const formatMonth = num => {
 	let resalt = '';
@@ -78,8 +89,7 @@ const anchors = document.querySelectorAll('.menu__link');
 
 for (let anchor of anchors) {
 	anchor.addEventListener('click', function (e) {
-		e.preventDefault()
-
+		e.preventDefault();
 		const blockID = anchor.getAttribute('href');
 
 		document.querySelector(blockID).scrollIntoView({
