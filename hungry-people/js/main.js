@@ -9,7 +9,6 @@ const closeMenuRight = document.querySelector('.close-menu-right');
 
 menuTop.addEventListener('click', (e) => {
 	const target = e.target;
-	console.log(target);
 
 	const iconMenuRight = target.closest('.fa-align-right');
 	const iconMenuLeft = target.closest('.fa-align-left');
@@ -24,13 +23,6 @@ menuTop.addEventListener('click', (e) => {
 	}
 
 });
-// else if(iconMenuLeft){
-// 	boxMenuLeft.classList.add('menu-open')
-// }
-
-
-
-
 
 const formatMonth = num => {
 	let resalt = '';
