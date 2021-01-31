@@ -5,7 +5,7 @@
 
 [hungry-people](https://alexkaverin777.github.io/hungry-people/ "hungry-people")
 
-[Summary](https://alexkaverin777.github.io/meSite/ "Summary") - Сайт резюие с портфолио и сертификатами 
+[Summary](https://alexkaverin777.github.io/meSite/ "Summary") - Сайт резюме с портфолио и сертификатами 
 
 [Forma](https://alexkaverin777.github.io/forma/ "Forma") - Forma
  
