@@ -1,5 +1,3 @@
-import React from "react";
-
 const addZero = number => {
 	const resalt = number < 10 ? '0' + number : number;
 	return resalt

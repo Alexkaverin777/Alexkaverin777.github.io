@@ -5,19 +5,19 @@ import AllNews from "./components/AllNews/AllNews";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 import News from "./components/News/News";
-import {Route, Redirect} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import Axios from "axios";
 
 const useFetch = () => {
 	const [data, updateData] = React.useState(null);
-	const requestUrl = 'http://newsapi.org/v2/top-headlines?' + 'country=us&' + 'apiKey=f2ecd509c3e0445abdedf006b3116a0b';
+	const requestUrl = `${'http://newsapi.org/v2/top-headlines?'}${'country=us&'}${'apiKey=f2ecd509c3e0445abdedf006b3116a0b'}`
 	useEffect(() => {
 		const fetchData = async () => {
 			const response = await Axios.get(requestUrl);
 			updateData(response.data.articles);
 		};
 		fetchData()
-	}, []);
+	});
 	return data
 };
 
