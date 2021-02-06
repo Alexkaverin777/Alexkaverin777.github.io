@@ -1,0 +1,51 @@
+$color-active: #004FEC;
+$color-text: #333D51;
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Proxima Nova, sans-serif;
+    padding: 0;
+    color:  $color-text;
+}
+
+code {
+    font-family:  source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+    max-width: 1110px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+ul,li,menu {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $color-text;
+}
+
+.line-blue {
+    position: relative;
+    &:before{
+        content: '';
+        width: 2px;
+        height: 100%;
+        background-color: $color-active;
+        position: absolute;
+        left: -25px;
+        top: 0px;
+    }
+}

@@ -1,0 +1,43 @@
+$color-active: #004FEC;
+$color-text: #333D51;
+
+.main {
+	padding: 90px 0;
+}
+
+.title {
+	margin-bottom: 100px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 60px;
+	line-height: 93%;
+	span.title-span-block {
+		display: block;
+		margin-bottom: 15px;
+	}
+	span.color-active {
+		color: $color-active;
+		margin-left: 22px;
+	}
+}
+
+.wrapper-post {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.allNews {
+	margin-top: 45px;
+	&__link{
+		color: $color-active;
+		font-size: 20px;
+		line-height: 24px;
+		padding-bottom: 3px;
+		transition: all .2s ease;
+		border-bottom: 2px solid transparent;
+		&:hover{
+			border-bottom: 2px solid $color-active;
+		}
+
+	}
+}

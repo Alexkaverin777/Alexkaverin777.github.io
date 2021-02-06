@@ -1,0 +1,60 @@
+$color-active: #004FEC;
+$color-text: #333D51;
+
+.contact-wrapper {
+	display: flex;
+	justify-content: space-between;
+	//align-items: center;
+}
+
+.block-img {
+	max-width: 540px;
+	height: 340px;
+}
+
+.block-data {
+	&__number {
+		font-size: 60px;
+		font-weight: normal;
+		line-height: 93%;
+
+		a{
+			color: $color-active;
+		}
+	}
+	&__name {
+		margin-top: 50px;
+		padding-left: 25px;
+		font-size: 25px;
+		line-height: 30px;
+		width: 150px;
+		&:before {
+			left: 0px;
+		}
+	}
+	&__mail {
+		padding-left: 25px;
+		font-size: 20px;
+		line-height: 24px;
+		margin-top: 25px;
+	}
+	&__skills {
+		padding-left: 25px;
+		font-size: 20px;
+		line-height: 24px;
+		color: rgba(51, 61, 81, 0.5);
+		margin-top: 50px;
+	}
+	&__skills-subtitle {
+		padding-left: 25px;
+		font-size: 20px;
+		line-height: 24px;
+		color: #333D51;
+		margin-top: 25px;
+		span{
+			color: $color-active;
+		}
+	}
+}
+
+

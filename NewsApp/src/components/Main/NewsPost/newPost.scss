@@ -1,0 +1,44 @@
+$color-active: #004FEC;
+$color-text: #333D51;
+.post {
+	max-width: 350px;
+	padding: 0px 25px 55px 25px;
+	height: 290px;
+	display: flex;
+	flex-direction: column;
+}
+
+.link-bloc {
+	display: flex;
+	justify-content: space-between;
+}
+
+.post__title {
+	font-size: 25px;
+	line-height: 30px;
+	max-width: 300px;
+	position: relative;
+	transition: all .5s ease;
+	&:hover {
+		background-color: $color-active;
+		color: #fff;
+	}
+
+}
+
+.link-bloc {
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+	&__date{
+		font-size: 20px;
+		line-height: 24px;
+		color: rgba(51, 61, 81, 0.5);
+		span{
+			margin-right: 7px;
+			font-size: 30px;
+			line-height: 37px;
+			color: $color-text;
+		}
+	}
+}
