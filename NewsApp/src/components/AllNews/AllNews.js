@@ -11,7 +11,6 @@ const AllNews = props => {
 				title={item.title}
 				source={item.source.name}
 				url={item.url}
-
 				item={item}
 			/>
 		));
@@ -23,6 +22,7 @@ const AllNews = props => {
 				<span className="color-active">
 					{props.titleSpanColor}
 				</span>
+
 			</h1>
 			<div className="wrapper-post">
 				{newsArr}
