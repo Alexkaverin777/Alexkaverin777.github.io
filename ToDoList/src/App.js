@@ -1,12 +1,12 @@
-import React, {Fragment, useEffect} from 'react';
+import React, {useState,Fragment, useEffect} from 'react';
 import ToDoItem from "./components/ToDoItem/ToDoItem";
 import todoData from "./todoData";
 
 function App() {
 	let dataLocal = JSON.parse(localStorage.getItem('dataLocal')) || todoData;
-	const [posts, setPosts] = React.useState(dataLocal);
+	const [posts, setPosts] = useState(dataLocal);
 	//получение значение инпуты
-	const [valueInput, setValueInput] = React.useState('');
+	const [valueInput, setValueInput] = useState('');
 
 	useEffect(() => {
 		if (!posts.length) {
@@ -40,13 +40,10 @@ function App() {
 	};
 
 	const handleChange = id => {
-		const index = id;
-		console.log('index ', index);
 		const resalt = posts.map(item => {
-			if (item.id === index) {
+			if (item.id === id) {
 				return {...item, completed: !item.completed}
 			} else {
-				console.log('Item  ELSE', item.id);
 				return item
 			}
 		});

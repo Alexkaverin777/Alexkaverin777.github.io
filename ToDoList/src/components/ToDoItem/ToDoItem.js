@@ -3,7 +3,7 @@ import './ToDoItem.css';
 import ButtonClose from "../ButtonClose/ButtonClose";
 
 const ToDoItems = props => {
-
+	
 	return (
 		<div className="block-input">
 			<label className="text-label">{props.text}
