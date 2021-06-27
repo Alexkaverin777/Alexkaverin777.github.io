@@ -1,0 +1,158 @@
+.booking {
+    color: #000
+}
+
+
+.wrapper-select {
+    position: relative;
+    width: 49%;
+    padding: 7px 0;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #e5e5e5
+}
+
+.select-header {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #e5e5e5;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 20px;
+    height: 40px;
+    position: relative;
+
+    &__carrent {
+        position: relative;
+        cursor: pointer
+    }
+
+    &__carrent:after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: '';
+        width: 12px;
+        height: 3px;
+        display: block;
+        background: black;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+    }
+
+    &__carrent:before {
+        position: absolute;
+        right: 7px;
+        top: 0;
+        content: '';
+        width: 12px;
+        height: 3px;
+        display: block;
+        background: black;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg)
+    }
+
+
+}
+
+.select-body {
+    z-index: 5;
+    background-color: #e5e5e5;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    max-height: 90px;
+    width: 100%;
+    padding-bottom: 135px;
+
+    &__item {
+        color: #2C2C2C;
+        padding: 6px 0 6px 20px;
+        font-size: 16px;
+        line-height: 14px;
+        cursor: pointer;
+        -webkit-transition: background-color .2s linear;
+        -o-transition: background-color .2s linear;
+        transition: background-color .2s linear
+    }
+    
+    &__item:hover {
+        background-color: #F3F8FC
+    }
+}
+
+
+
+#select-body::-webkit-scrollbar {
+    width: 8px
+}
+
+#select-body::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 20px
+}
+
+#select-body::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+.isActiveSelect {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.isActiveSelect .select-header__carrent:after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.isActiveSelect .select-header__carrent:before {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.select-header.isActiveSelect+.select-body {
+    display: block
+}
+
+.form {
+    max-width: 560px;
+
+    &__title {
+        text-align-last: center;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        width: 49%;
+        background: #e5e5e5;
+        border: none;
+        margin-bottom: 15px;
+        height: 55px;
+        border-radius: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    &__btn {
+        width: 99%;
+        background-color: #e8c300;
+        border: none;
+        outline: none;
+        padding: 13px 0
+    }
+
+}

@@ -1,0 +1,64 @@
+.private {
+    background: url("../img/private-bg.png") no-repeat center/cover;
+    padding-bottom: 0
+  }
+  
+  .box-img__signature {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+    background-color: #000;
+    font-size: 24px;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-indent: 20px;
+    font-family: 'Banny-BoldRound';
+    width: 476px
+  }
+  
+  .box-img__signature_right {
+    top: 253px;
+    left: -154px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg)
+  }
+  
+  .box-img__signature_left {
+    top: 253px;
+    right: -154px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg)
+  }
+  
+  .wrapper-foto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+  
+  .foto-item {
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease
+  }
+  
+  .foto-item:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+  }
+  
+  .foto-item img {
+    width: 100%
+  }
+  

@@ -1,0 +1,27 @@
+.specialties .content-text {
+    color: #fff
+  }  
+
+.specialties {
+  background: url("../img/specialty's-bg.png") no-repeat center/cover;
+  padding: 50px 0;
+  color: #fff
+}
+
+.swiper-pagination-bullet {
+  background: rgba(#fff, .5);
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  background-color: rgba(#fff, 1);
+  opacity: 1;
+}
+
+.swiper-slide  {
+  opacity: 0;
+  transition: all .6s ease-in-out;
+}
+.swiper-slide-active {
+  opacity: 1;
+  transition: all .6s ease-in-out;
+}

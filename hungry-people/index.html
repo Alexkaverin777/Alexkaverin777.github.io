@@ -1,77 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/217e4225d6.js" crossorigin="anonymous"></script>
     <title>hungry people</title>
+    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
+
 <header class="header" id="header">
+    <div class="header-timer">
+        <h5 class="header-timer__title">LEFT:</h5>
+        <span class="header-timer__time">00:00</span>
+    </div>
     <div class="container container-header">
-        <nav class="nav-menu">
-            <manu class="menu">
-                <li class="item-mobile-menu">
-                    <!--                    <span class="close-menu">X</span>-->
+        <div class="row-top-menu">
+            <div class="menu">
+                <button class="item-mobile-menu">
                     <span class="icon-menu-mobile-left" data-top-menu="left">
                         <i class="fas fa-align-left"></i>
                     </span>
-                </li>
-                <li class="menu__box menu__box_left">
+                </button>
+                <nav class="menu__box menu__box_left">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#header" class="menu__link">
+                            HOME
+                        </a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link">
+                            ABOUT
+                        </a></li>
+                        <li class="menu__item"><a href="#team" class="menu__link">
+                            TEAM
+                        </a></li>
+                        <li class="menu__item"><a href="#booking" class="menu__link">
+                            BOOKING
+                        </a></li>
+                    </ul>
                     <span class="close-menu-left">X</span>
-                    <a href="#header" class="menu__link">
-                        HOME
-                    </a>
-                    <a href="#about" class="menu__link">
-                        ABOUT
-                    </a>
-                    <a href="#team" class="menu__link">
-                        TEAM
-                    </a>
-                    <a href="#booking" class="menu__link">
-                        BOOKING
-                    </a>
-                </li>
-                <li class="logo">
+                </nav>
+                <div class="logo">
                     <a href="#">
                         <img src="img/Vector.svg" alt="LOGO">
                     </a>
-                </li>
-                <li class="item-mobile-menu">
+                </div>
+                <button class="item-mobile-menu">
                     <span class="icon-menu-mobile-right" data-top-menu="right">
                         <i class="fas fa-align-right"></i>
                     </span>
-                </li>
-                <li class="menu__box menu__box_right">
+                </button>
+                <nav class="menu__box menu__box_right">
                     <span class="close-menu-right">X</span>
-                    <a href="#delicious-menu" class="menu__link">
-                        MENU
-                    </a>
-                    <a href="#wrapper-foto" class="menu__link">
-                        GALERIE
-                    </a>
-                    <a href="#private" class="menu__link">
-                        EVENTS
-                    </a>
-                    <a href="#section-contact" class="menu__link">
-                        CONTACT
-                    </a>
-                </li>
-            </manu>
-        </nav>
-
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#delicious-menu" class="menu__link">
+                            MENU
+                        </a></li>
+                        <li class="menu__item"><a href="#wrapper-foto" class="menu__link">
+                            GALERIE
+                        </a></li>
+                        <li class="menu__item"><a href="#private" class="menu__link">
+                            EVENTS
+                        </a></li>
+                        <li class="menu__item"><a href="#section-contact" class="menu__link">
+                            CONTACT
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <span class="header-line-left"></span>
         <main>
             <div class="wrapper-main">
                 <div class="left-block">
-                    <span class="left-block__content">
-                        Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
-                    </span>
+                        <span class="left-block__content">
+                            Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
+                        </span>
                 </div>
                 <div class="center-block main-title">
-                    <span class="title-description"> RESTAURANT</span>
-                    <h1 class="title">
+                    <span class="center-block__title-description"> RESTAURANT</span>
+                    <h1 class="center-block__title title ">
                         hungry people
                     </h1>
                     <div class="wrapper-main-btn">
@@ -110,6 +121,7 @@
                 </div>
             </div>
         </main>
+        <span class="header-line-right"></span>
     </div>
 </header>
 
@@ -125,9 +137,11 @@
                     tempor magna.
                 </p>
 
-                <p class="about-content__content content__text">
-                    Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula.
-                    Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+                <p class="about-content__content content-text">
+                    Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                    ligula.
+                    Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec
+                    sem.
                     Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
                 </p>
             </div>
@@ -151,14 +165,16 @@
                 <h2 class=" h2-title">
                     MASTER CHEF
                 </h2>
-                <p class="our-team__description content__description">
+                <p class="our-team__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
                     tempor magna.
                 </p>
 
-                <p class="our-team__description content__text">
-                    Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula.
-                    Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+                <p class="our-team__description content-text">
+                    Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                    ligula.
+                    Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec
+                    sem.
                     Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
                 </p>
             </div>
@@ -212,35 +228,88 @@
             specialties
         </h3>
 
-        <div class="slider">
-            <div class="wrapper-content">
-                <div class=" master-img content-img">
-                    <img src="img/Rectangle%20(1).png" alt="About-img">
-                </div>
-                <div class="content">
-                    <h2 class=" h2-title">
-                        chocolate pancakes
-                    </h2>
-                    <p class=" content__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
-                        tempor magna.
-                    </p>
+        <div class="slider specialtiesSlider">
+            <div class="slider__item swiper-wrapper">
+                <div class="wrapper-content swiper-slide">
+                    <div class=" master-img content-img">
+                        <img src="img/Rectangle%20(1).png" alt="About-img">
+                    </div>
+                    <div class="content">
+                        <h2 class=" h2-title">
+                            chocolate pancakes
+                        </h2>
+                        <p class=" content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
+                            a,
+                            tempor magna.
+                        </p>
 
-                    <p class=" content__text">
-                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
-                        ligula.
-                        Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec
-                        sem.
-                        Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
-                    </p>
+                        <p class=" content-text">
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                            ligula.
+                            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam
+                            nec
+                            sem.
+                            Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                        </p>
+                    </div>
+                </div>
+                <div class="wrapper-content swiper-slide">
+                    <div class=" master-img content-img">
+                        <img src="img/Rectangle%20(1).png" alt="About-img">
+                    </div>
+                    <div class="content">
+                        <h2 class=" h2-title">
+                            chocolate pancakes
+                        </h2>
+                        <p class=" content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
+                            a,
+                            tempor magna.
+                        </p>
+
+                        <p class=" content-text">
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                            ligula.
+                            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam
+                            nec
+                            sem.
+                            Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                        </p>
+                    </div>
+                </div>
+                <div class="wrapper-content swiper-slide">
+                    <div class=" master-img content-img">
+                        <img src="img/Rectangle%20(1).png" alt="About-img">
+                    </div>
+                    <div class="content">
+                        <h2 class=" h2-title">
+                            chocolate pancakes
+                        </h2>
+                        <p class=" content__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
+                            a,
+                            tempor magna.
+                        </p>
+
+                        <p class=" content-text">
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                            ligula.
+                            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam
+                            nec
+                            sem.
+                            Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                        </p>
+                    </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="wrapper-dots">
-            <span class="dot"></span>
-            <span class="dot dot-active"></span>
-            <span class="dot"></span>
-        </div>
+        <!--        <div class="wrapper-dots">-->
+        <!--            <span class="dot"></span>-->
+        <!--            <span class="dot dot-active"></span>-->
+        <!--            <span class="dot"></span>-->
+        <!--        </div>-->
 
     </div>
 </section>
@@ -387,31 +456,31 @@
             <div class="wrapper-product tabs-content__box" data-tab-content="soupe">
                 <ul class="list-product">
                     <li class="list-product__item">
-                        <h4 class="list-product__title">soupe   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">soupe . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">soupe   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">soupe . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">  soupe . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title"> soupe . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">soupe   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">soupe . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">soupe   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">soupe . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">soupe   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">soupe . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">soupe   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">soupe . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                 </ul>
@@ -419,31 +488,31 @@
             <div class="wrapper-product tabs-content__box" data-tab-content="pasta">
                 <ul class="list-product">
                     <li class="list-product__item">
-                        <h4 class="list-product__title">pasta   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">pasta . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">pasta   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">pasta . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">  pasta . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title"> pasta . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">pasta   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">pasta . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">pasta   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">pasta . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">pasta   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">pasta . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">pasta   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">pasta . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                 </ul>
@@ -451,31 +520,31 @@
             <div class="wrapper-product tabs-content__box" data-tab-content="desert">
                 <ul class="list-product">
                     <li class="list-product__item">
-                        <h4 class="list-product__title">desert   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">desert . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">desert   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">desert . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">  desert . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title"> desert . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">desert   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">desert . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">desert   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">desert . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">desert   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">desert . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">desert   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">desert . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                 </ul>
@@ -483,31 +552,31 @@
             <div class="wrapper-product tabs-content__box" data-tab-content="wine">
                 <ul class="list-product">
                     <li class="list-product__item">
-                        <h4 class="list-product__title">wine   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">wine . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">wine   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">wine . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">  wine . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title"> wine . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">wine   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">wine . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">wine   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">wine . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">wine   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">wine . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">wine   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">wine . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                 </ul>
@@ -515,31 +584,31 @@
             <div class="wrapper-product tabs-content__box" data-tab-content="beer">
                 <ul class="list-product">
                     <li class="list-product__item">
-                        <h4 class="list-product__title">beer   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">beer . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">beer   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">beer . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">  beer . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title"> beer . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">beer   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">beer . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">beer   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">beer . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">beer   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">beer . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">beer   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">beer . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                 </ul>
@@ -547,91 +616,91 @@
             <div class="wrapper-product tabs-content__box" data-tab-content="drinks">
                 <ul class="list-product">
                     <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">  drinks . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title"> drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
-                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
-                    </li>
-                </ul>
-                <ul class="list-product">
-                    <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
-                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
-                    </li>
-                    <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
-                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
-                    </li>
-                    <li class="list-product__item">
-                        <h4 class="list-product__title">  drinks . . . . 55,68 USD</h4>
-                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
-                    </li>
-                    <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
-                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
-                    </li>
-                    <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
-                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
-                    </li>
-                    <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
-                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
-                    </li>
-                    <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                 </ul>
                 <ul class="list-product">
                     <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">  drinks . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title"> drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                     <li class="list-product__item">
-                        <h4 class="list-product__title">drinks   . . . . 55,68 USD</h4>
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
+                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
+                    </li>
+                </ul>
+                <ul class="list-product">
+                    <li class="list-product__item">
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
+                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
+                    </li>
+                    <li class="list-product__item">
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
+                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
+                    </li>
+                    <li class="list-product__item">
+                        <h4 class="list-product__title"> drinks . . . . 55,68 USD</h4>
+                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
+                    </li>
+                    <li class="list-product__item">
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
+                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
+                    </li>
+                    <li class="list-product__item">
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
+                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
+                    </li>
+                    <li class="list-product__item">
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
+                        <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
+                    </li>
+                    <li class="list-product__item">
+                        <h4 class="list-product__title">drinks . . . . 55,68 USD</h4>
                         <span class="list-product__subtitle">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                 </ul>
@@ -727,7 +796,8 @@
 
 <section class="section-map" id="section-map">
     <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13380.415111824703!2d30.52513594946268!3d50.41414721398795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x324a5854eb3f1a2b!2sOcean%20Plaza!5e0!3m2!1sru!2sua!4v1601711101408!5m2!1sru!2sua"
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13380.415111824703!2d30.52513594946268!3d50.41414721398795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x324a5854eb3f1a2b!2sOcean%20Plaza!5e0!3m2!1sru!2sua!4v1601711101408!5m2!1sru!2sua"
                 width="100%" height="100%" frameborder="0" style="border:0;" allow="fullscreen" aria-hidden="false"
                 tabindex="0"></iframe>
     </div>
@@ -743,6 +813,8 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR8P72HMX3zllKeeZt8X89dJWMEu0LSX8&callback=myMap"
         defer></script>
+<script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
 </body>
+
 </html>

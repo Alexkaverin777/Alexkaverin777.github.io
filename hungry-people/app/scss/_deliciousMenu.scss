@@ -1,0 +1,114 @@
+
+.delicious-menu {
+    color: #000;
+    padding: 100px 0;
+    text-align: center
+  }
+  
+  .description-title {
+    font-family: 'OpenSans-Bold';
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 565px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center
+  }
+  
+  .delicious-menu__title {
+    -moz-text-align-last: center;
+    text-align-last: center
+  }
+  
+  .tabs-menu {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 50px;
+    -moz-text-align-last: center;
+    text-align-last: center
+  }
+  
+  .tabs-menu__link {
+    color: #000;
+    font-family: 'OpenSans-Bold';
+    padding: 17px
+  }
+  
+  .tabs-menu__item {
+    min-width: 120px;
+    position: relative;
+    -webkit-transition: background-color .5s ease;
+    -o-transition: background-color .5s ease;
+    transition: background-color .5s ease
+  }
+  
+  .tabs-menu__item:hover {
+    background-color: #e8c300
+  }
+  
+  .tabs-menu__item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(51, 51, 51, 0.2)
+  }
+  
+  .tabs-menu__item:last-child:before {
+    display: none
+  }
+  
+  .wrapper-product {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+  
+  .tabs-content__box {
+    display: none
+  }
+  
+  .list-product {
+    padding: 0 20px
+  }
+  
+  .list-product__item {
+    padding-bottom: 30px
+  }
+  
+  .list-product__title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #333333;
+    text-transform: uppercase;
+    font-family: 'Banny-BoldRound'
+  }
+  
+  .list-product__subtitle {
+    color: rgba(51, 51, 51, 0.2);
+    font-size: 12px;
+    display: block;
+    -moz-text-align-last: left;
+    text-align-last: left
+  }
+  
+  .tabsActive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+  }
+  
